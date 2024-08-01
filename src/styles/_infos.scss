@@ -1,0 +1,24 @@
+@use 'variables';
+
+.infos {
+
+
+    &__list {
+
+
+        &__item {
+            color: variables.$textColor;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width:640px) {
+            &__item {
+                font-size: 16px;
+            }
+        }
+    }
+}

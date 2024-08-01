@@ -1,0 +1,23 @@
+@use 'variables';
+
+.contador {
+
+
+    &__title {
+        color: variables.$textColor;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-style: italic;
+        text-align: center;
+        margin-top: 60px;
+        line-height: 60px;
+    }
+
+    @media (max-width:640px) {
+        &__title {
+            font-size: 25px;
+            margin-top: 40px;
+            line-height: 40px;
+        }
+    }
+}
